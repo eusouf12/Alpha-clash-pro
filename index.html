@@ -78,26 +78,27 @@
                     <button class="btn rounded-full bg-purple-700 text-white px-4">
                         <span>Life</span>
                         <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z" /></svg>
-                         <span>1</span>
+                         <span id="life">5</span>
                       </button>
 
                       <button class="btn rounded-full bg-purple-700 text-white px-4">
                         Score
                         <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z" /></svg>
-                        <span>1</span>
+                        <span id="score">0</span>
                       </button>
                 </div>
               </div>
         </section>
          <!-- playgroun end  -->
-        <section id="score" class=" flex justify-center items-center min-h-screen text-center hidden">
+        <section id="score-section" class=" flex justify-center items-center min-h-screen text-center hidden">
             <div class="text-white space-y-5 bg-[#FFFFFF33]
             p-4 rounded-lg">
+                <h4 class="3xl">Game Over</h4>
                 <h1 class="text-8xl ">
                     <span class="font-semibold">Score :</span>
-                    <span>14</span>
+                    <span id="final-score">35</span>
                 </h1>
-                <button class="btn">Play Again</button>
+                <button onclick="play()" class="btn">Play Again</button>
                 <p>Practice make a pro</p>
             </div>     
         </section>
